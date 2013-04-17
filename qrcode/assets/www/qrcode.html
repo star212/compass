@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+    <title>Bar Code Scanner</title>
+    <link rel="stylesheet" href="qrcode.css" type="text/css">
+    <script type="text/javascript" src="cordova-2.6.0.js"></script>
+    <script type="text/javascript" src="barcodescanner.js"></script>
+
+  </head>
+  <body id="stage" class="theme">
+    <h1>二维码扫描器</h1>
+    
+    <a href="#" class="btn" onclick="scanCode();">扫描二维码</a>
+    
+    <input type="text" id="text"/><a href="#" class="btn enc" onclick="encodeText();">编码文字</a> 
+    <input type="text" id="email"/><a href="#" class="btn enc" onclick="encodeEmail();">编码电子邮箱地址</a>   
+    <input type="text" id="phone"/><a href="#" class="btn enc" onclick="encodePhone();">编码电话号码</a>   
+    <input type="text" id="sms"/><a href="#" class="btn enc" onclick="encodeSMS();">编码消息</a>
+    <div id="history"></div>
+    <script type="text/javascript" src="qrcode.js"></script>
+  </body>
+</html>

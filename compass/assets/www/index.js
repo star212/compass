@@ -28,7 +28,7 @@ define(function(require) {
     var $ = require('zepto');
     //alert(1);
 
-    var options = { frequency: 200 };
+    var options = { frequency: 500 };
     window.watchID = navigator.compass.watchHeading(onSuccess, onError, options);
     // onSuccess: Get the current heading
     //
@@ -38,7 +38,7 @@ define(function(require) {
 
         $("#wrap").animate({
             rotate : (360 - parseFloat(heading.magneticHeading)) + "deg"
-        },200,"ease");
+        },450,"ease");
     }
 
     // onError: Failed to get the heading
