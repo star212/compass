@@ -1,4 +1,4 @@
-phonegap
+compass
 ========
 
-自研的phonegap项目
+android 上的指南针软件
